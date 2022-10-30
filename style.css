@@ -1,0 +1,63 @@
+body{
+  background: #333;
+  display: block;
+  justify-content: center;
+  
+}
+.fisrt{
+  display: flex;
+  justify-content: center;
+}
+.second{
+  display: flex;
+  justify-content: center;
+}
+.third{
+  display: flex;
+  justify-content: center;
+}
+.fourth{
+  display: flex;
+  justify-content: center;
+}
+.move{
+/*   margin: auto; */
+  margin-left: 15px;
+  margin-top: 25px;
+  width: 5rem;
+  height: 5rem;
+  background: #000;
+  animation: circle;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  display: flex;
+/*   align-items: center; */
+}
+.move::after {
+/*   position: absolute; */
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: #fff;
+  margin: auto;
+  animation: circle;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  
+/*   margin-right: 150px; */
+}
+.move:hover {
+  background: lime;
+  cursor: pointer;
+}
+
+@keyframes circle{
+  0%{
+    border-radius:0%;
+  }
+  100%{
+    border-radius: 50%;
+}
